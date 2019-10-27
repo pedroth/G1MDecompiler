@@ -36,3 +36,5 @@ profile.*
 # Casio and code files
 *.G1M
 *.txt
+
+g1mdecompiler

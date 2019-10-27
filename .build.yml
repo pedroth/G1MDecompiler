@@ -1,0 +1,20 @@
+image: archlinux
+packages:
+  - go
+sources:
+  - https://git.sr.ht/~humaid/g1mdecompiler
+tasks:
+  - setup: |
+      cd g1mdecompiler
+      go get ./...
+  - format: |
+      cd g1mdecompiler
+      go fmt $(go list ./... | grep -v /vendor/)
+      go vet $(go list ./... | grep -v /vendor/)
+  - test: |
+      cd g1mdecompiler
+      go test -cover -race $(go list ./... | grep -v /vendor/)
+  - build: |
+      cd g1mdecompiler
+      go build
+

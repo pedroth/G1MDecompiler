@@ -1,5 +1,5 @@
 # G1M Decompiler
-
+[Visit project page on humaidq.ae](https://humaidq.ae/projects/g1mdecompiler/)
 ## 1. Purpose
 The goal of G1M Decompiler is to allow programmers to decode Casio Basic's "`.g1m`"
 file into a readable text similarly what is shown on the calculator.

@@ -128,6 +128,7 @@ func identifyAllCode(code string) string {
 	code = strings.Replace(code, "[U+00D0]", "π", -1)
 	code = strings.Replace(code, "[U+00CD]", "ř", -1)
 	code = strings.Replace(code, "[U+00CE]", "θ", -1)
+	code = strings.Replace(code, "[U+00E6]G", "θ", -1)
 	code = strings.Replace(code, "[U+000E]", "->", -1)
 	code = strings.Replace(code, "[U+000C]", "𐏐\n", -1)
 	code = strings.Replace(code, "[U+000D]", "\n", -1)
@@ -150,9 +151,10 @@ func identifyAllCode(code string) string {
 	code = strings.Replace(code, "[U+00F7]x̄", "AxesOn", -1)
 	code = strings.Replace(code, "[U+00F7][U+00D2]", "AxesOff", -1)
 	code = strings.Replace(code, "[U+00F7][U+00D4]", "LabelOff", -1)
-	code = strings.Replace(code, "[U+0014]", "f1", -1)
-	code = strings.Replace(code, "[U+0015]", "f2", -1)
-	code = strings.Replace(code, "[U+0016]", "f3", -1)
+	code = strings.Replace(code, "[U+0014]", "f_1", -1)
+	code = strings.Replace(code, "[U+0015]", "f_2", -1)
+	code = strings.Replace(code, "[U+0016]", "f_3", -1)
+	code = strings.Replace(code, "[U+0017]", "f_4 ", -1)
 	code = strings.Replace(code, "[U+00A6]", "Int ", -1)
 	code = strings.Replace(code, "[U+00EB]", "ViewWindow ", -1)
 	code = strings.Replace(code, "[U+00F7][e^]", "Text ", -1)
@@ -160,6 +162,7 @@ func identifyAllCode(code string) string {
 	code = strings.Replace(code, "[U+003E]", ">", -1)
 	code = strings.Replace(code, "[U+00F7]^", "PlotOn ", -1)
 	code = strings.Replace(code, "[U+00F7]×", "PlotOff ", -1)
+	code = strings.Replace(code, "[U+00F7][U+00AA]", "PlotChg ", -1)
 	code = strings.Replace(code, "[U+007F]Q", "List ", -1)
 	code = strings.Replace(code, "[U+00F7][U+00A7]", "F-Line ", -1)
 	code = strings.Replace(code, "[U+007F]J", "List->Mat(", -1)
@@ -172,6 +175,8 @@ func identifyAllCode(code string) string {
 	code = strings.Replace(code, "[U+00E0]", "Plot ", -1)
 	code = strings.Replace(code, "[U+007F][U+0024]", "ReP ", -1)
 	code = strings.Replace(code, "[U+007F][U+0025]", "ImP ", -1)
+	code = strings.Replace(code, "[U+00D9]", "Norm ", -1)
+	code = strings.Replace(code, "[U+00F7][U+0023]", "DrawStat", -1)
 
 	return code
 }

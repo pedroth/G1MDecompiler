@@ -1,5 +1,8 @@
 # G1M Decompiler
 [Visit project page on humaidq.ae](https://humaidq.ae/projects/g1mdecompiler/)
+
+Made a port to js in [here](https://github.com/pedroth/casio-fx-9860-graveyard/blob/main/decompile_file.js)
+
 ## 1. Purpose
 The goal of G1M Decompiler is to allow programmers to decode Casio Basic's "`.g1m`"
 file into a readable text similarly what is shown on the calculator.
